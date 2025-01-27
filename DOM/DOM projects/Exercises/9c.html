@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button class="heads" onclick="choice('heads')">heads</button>
+    <button class="tails" onclick="choice('tails')">tails</button>
+    <p class="res"></p>
+    
+    <script>
+        const headBtn = document.querySelector('.heads')
+        const tailsBtn = document.querySelector('.tails')
+
+        function choice(res) {
+            if (choice === 'heads') {
+                res = 'heads'
+            } else if (choice === 'tails') {
+                res = 'tails'
+            }
+            document.querySelector('.res').innerHTML = `You chose: ${res}`
+        }
+    </script>
+</body>
+</html>

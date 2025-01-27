@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" class="input" onkeydown="displayNameKeydown(event)">
+    <button class="submit" onclick="displayName()">Submit</button>
+    <p class="dis"></p>
+    <script>
+        // inputEl = document.querySelector('.input')
+        // submitBtn = document.querySelector('.submit')
+
+
+        function displayNameKeydown(event) {
+            if (event.key === 'Enter') {
+                displayName()
+            }
+        }
+        function displayName() {
+            const inputEl = document.querySelector('.input')
+            let name = inputEl.value
+            
+            document.querySelector('.dis').innerHTML = `Your name is: ${name}`
+        }
+    </script>
+</body>
+</html>
