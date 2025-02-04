@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button class="js-btn" onclick="dis()">Start</button>
+    <script>
+        const startBtn = document.querySelector('.js-btn')
+        
+        function dis() {
+            startBtn.addEventListener(onclick)
+        }
+        startBtn.setTimeout(() => {
+            startBtn.innerHTML = 'Finished'
+        }, 1000);
+        startBtn.innerHTML = 'Finished'
+    </script>
+</body>
+</html>
